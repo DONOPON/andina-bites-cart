@@ -2,7 +2,7 @@
 import { fetchProductos } from './repo.js';
 import * as Cart from './cart.js';
 import * as View from './view.js';
-import { validateForm, wireLiveValidation } from './validators.js';
+import { validateForm, wireLiveValidation } from './validator.js';
 import { startSession, incVisits, guardarPedido } from './storage.js';
 
 let productos = [];
