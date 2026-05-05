@@ -1,13 +1,13 @@
 {
   "actualizado": "2026-05-05",
   "productos": [
-    {"id":"h1","nombre":"Hamburguesa Clásica","categoria":"hamburguesas","precio":18900,"descripcion":"Carne de res 150g, queso cheddar, lechuga, tomate y pan brioche.","imagen":"assets/img/burger-clasica.jpg"},
-    {"id":"h2","nombre":"Andina BBQ","categoria":"hamburguesas","precio":24900,"descripcion":"Doble carne, tocineta crocante, queso y salsa BBQ ahumada.","imagen":"assets/img/burger-andina.jpg"},
-    {"id":"c1","nombre":"Combo Andino","categoria":"combos","precio":29900,"descripcion":"Hamburguesa Andina + papas medianas + bebida 350ml.","imagen":"assets/img/combo.jpg"},
-    {"id":"p1","nombre":"Papas Crocantes","categoria":"papas","precio":9900,"descripcion":"Papas a la francesa con sal de hierbas y salsa de la casa.","imagen":"assets/img/papas.jpg"},
-    {"id":"a1","nombre":"Alitas BBQ x6","categoria":"alitas","precio":21900,"descripcion":"Seis alitas glaseadas en BBQ ahumado con apio.","imagen":"assets/img/alitas.jpg"},
-    {"id":"s1","nombre":"Salchipapas Urbana","categoria":"salchipapas","precio":15900,"descripcion":"Papas crocantes, salchicha ahumada y trío de salsas.","imagen":"assets/img/salchipapas.jpg"},
-    {"id":"b1","nombre":"Gaseosa 350ml","categoria":"bebidas","precio":5900,"descripcion":"Bebida fría a elección, vaso 350ml con hielo.","imagen":"assets/img/bebida.jpg"},
-    {"id":"d1","nombre":"Brownie con Helado","categoria":"postres","precio":12900,"descripcion":"Brownie tibio con helado de vainilla y salsa de chocolate.","imagen":"assets/img/postre.jpg"}
+    {"id":"h1","nombre":"Hamburguesa Clásica","categoria":"hamburguesas","precio":4.50,"descripcion":"Carne de res 150g, queso cheddar, lechuga, tomate y pan brioche.","imagen":"assets/img/burger-clasica.jpg"},
+    {"id":"h2","nombre":"Andina BBQ","categoria":"hamburguesas","precio":5.90,"descripcion":"Doble carne, tocineta crocante, queso y salsa BBQ ahumada.","imagen":"assets/img/burger-andina.jpg"},
+    {"id":"c1","nombre":"Combo Andino","categoria":"combos","precio":7.50,"descripcion":"Hamburguesa Andina + papas medianas + bebida 350ml.","imagen":"assets/img/combo.jpg"},
+    {"id":"p1","nombre":"Papas Crocantes","categoria":"papas","precio":2.50,"descripcion":"Papas a la francesa con sal de hierbas y salsa de la casa.","imagen":"assets/img/papas.jpg"},
+    {"id":"a1","nombre":"Alitas BBQ x6","categoria":"alitas","precio":5.50,"descripcion":"Seis alitas glaseadas en BBQ ahumado con apio.","imagen":"assets/img/alitas.jpg"},
+    {"id":"s1","nombre":"Salchipapas Urbana","categoria":"salchipapas","precio":3.75,"descripcion":"Papas crocantes, salchicha ahumada y trío de salsas.","imagen":"assets/img/salchipapas.jpg"},
+    {"id":"b1","nombre":"Gaseosa 350ml","categoria":"bebidas","precio":1.50,"descripcion":"Bebida fría a elección, vaso 350ml con hielo.","imagen":"assets/img/bebida.jpg"},
+    {"id":"d1","nombre":"Brownie con Helado","categoria":"postres","precio":3.25,"descripcion":"Brownie tibio con helado de vainilla y salsa de chocolate.","imagen":"assets/img/postre.jpg"}
   ]
 }
