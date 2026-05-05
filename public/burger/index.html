@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Burger Andina - Hamburguesas artesanales urbanas. Pide en línea con nuestro carrito de compras." />
+<title>Burger Andina · Sabor urbano artesanal</title>
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand" aria-label="Burger Andina inicio">
+      <span class="brand-mark" aria-hidden="true">🍔</span>
+      <span>Burger<strong>Andina</strong></span>
+    </a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <button id="btn-cart" class="btn-cart" aria-label="Abrir carrito de compras" aria-haspopup="dialog" aria-controls="cart-panel">
+      <span aria-hidden="true">🛒</span>
+      <span>Carrito</span>
+      <span id="cart-count" class="cart-badge" aria-live="polite" aria-atomic="true">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section id="inicio" class="hero" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Comida rápida urbana</p>
+        <h1 id="hero-title">Sabor andino, <span>hecho a la parrilla.</span></h1>
+        <p class="lead">Hamburguesas artesanales, alitas, salchipapas y combos para llevar el sabor de la ciudad a tu mesa.</p>
+        <a href="#menu" class="btn btn-primary">Ver el menú</a>
+      </div>
+      <figure class="hero-figure">
+        <img src="assets/img/hero.jpg" alt="Hamburguesa artesanal con queso derretido sobre tabla de madera" width="1280" height="768" />
+      </figure>
+    </div>
+  </section>
+
+  <section id="menu" class="menu" aria-labelledby="menu-title">
+    <div class="container">
+      <header class="section-head">
+        <h2 id="menu-title">Nuestro menú</h2>
+        <p>Filtra por categoría o explora todo lo que tenemos para ti.</p>
+      </header>
+      <div class="filters" role="toolbar" aria-label="Filtros de categoría">
+        <button class="chip is-active" data-filter="todos" aria-pressed="true">Todos</button>
+        <button class="chip" data-filter="hamburguesas" aria-pressed="false">Hamburguesas</button>
+        <button class="chip" data-filter="combos" aria-pressed="false">Combos</button>
+        <button class="chip" data-filter="papas" aria-pressed="false">Papas</button>
+        <button class="chip" data-filter="alitas" aria-pressed="false">Alitas</button>
+        <button class="chip" data-filter="salchipapas" aria-pressed="false">Salchipapas</button>
+        <button class="chip" data-filter="bebidas" aria-pressed="false">Bebidas</button>
+        <button class="chip" data-filter="postres" aria-pressed="false">Postres</button>
+      </div>
+      <div id="catalog" class="grid-cards" aria-live="polite" aria-busy="true">
+        <p class="loading">Cargando productos…</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact" aria-labelledby="contact-title">
+    <div class="container contact-inner">
+      <div>
+        <h2 id="contact-title">Reserva o escríbenos</h2>
+        <p>Déjanos tus datos y te contactamos para reservas, pedidos especiales o eventos.</p>
+        <ul class="contact-info">
+          <li>📍 Cra. Andina 123, Bogotá</li>
+          <li>📞 +57 300 000 0000</li>
+          <li>✉️ hola@burgerandina.co</li>
+        </ul>
+      </div>
+      <form id="contact-form" class="form" novalidate aria-describedby="form-help">
+        <p id="form-help" class="form-help">Todos los campos marcados con * son obligatorios.</p>
+        <div class="field">
+          <label for="nombre">Nombre *</label>
+          <input id="nombre" name="nombre" type="text" required autocomplete="name"
+            aria-required="true" aria-describedby="err-nombre" />
+          <small id="err-nombre" class="error" role="alert"></small>
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico *</label>
+          <input id="email" name="email" type="email" required autocomplete="email"
+            aria-required="true" aria-describedby="err-email" />
+          <small id="err-email" class="error" role="alert"></small>
+        </div>
+        <div class="field">
+          <label for="telefono">Teléfono *</label>
+          <input id="telefono" name="telefono" type="tel" required autocomplete="tel"
+            placeholder="3001234567" aria-required="true" aria-describedby="err-telefono" />
+          <small id="err-telefono" class="error" role="alert"></small>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje *</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required
+            aria-required="true" aria-describedby="err-mensaje"></textarea>
+          <small id="err-mensaje" class="error" role="alert"></small>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<aside id="cart-panel" class="cart-panel" role="dialog" aria-labelledby="cart-title" aria-hidden="true" tabindex="-1">
+  <div class="cart-head">
+    <h2 id="cart-title">Tu carrito</h2>
+    <button id="btn-close-cart" class="btn-close" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div id="cart-items" class="cart-items" aria-live="polite"></div>
+  <footer class="cart-foot">
+    <div class="row"><span>Subtotal</span><strong id="cart-subtotal">$0</strong></div>
+    <div class="row"><span>IVA (19%)</span><strong id="cart-iva">$0</strong></div>
+    <div class="row total"><span>Total</span><strong id="cart-total">$0</strong></div>
+    <p class="meta">Última actualización: <time id="cart-updated">—</time></p>
+    <button id="btn-checkout" class="btn btn-primary btn-block">Finalizar pedido</button>
+    <button id="btn-clear" class="btn btn-ghost btn-block">Vaciar carrito</button>
+  </footer>
+</aside>
+<div id="cart-overlay" class="cart-overlay" hidden></div>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>© <span id="year"></span> Burger Andina · Todos los derechos reservados.</p>
+    <p class="muted">Sesión iniciada hace <span id="session-time">0</span> s · Visitas: <span id="visits">1</span></p>
+  </div>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
