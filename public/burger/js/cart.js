@@ -31,6 +31,7 @@ export const clear = () => { items = []; notify(); };
 
 export const totals = () => {
   const subtotal = items.reduce((s, i) => s + i.precio * i.qty, 0);
-  const iva = Math.round(subtotal * 0.19);
-  return { subtotal, iva, total: subtotal + iva, count: items.reduce((s, i) => s + i.qty, 0) };
+  const iva = Math.round(subtotal * 0.15 * 100) / 100;
+  const total = Math.round((subtotal + iva) * 100) / 100;
+  return { subtotal, iva, total, count: items.reduce((s, i) => s + i.qty, 0) };
 };

@@ -2,13 +2,13 @@
 const RX = {
   nombre: /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,40}$/,
   email: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/,
-  telefono: /^[0-9]{7,10}$/,
+  telefono: /^0[2-9][0-9]{8}$/,
   mensaje: /^[\s\S]{10,400}$/,
 };
 const MSG = {
   nombre: 'Solo letras, entre 3 y 40 caracteres.',
   email: 'Ingresa un correo electrónico válido.',
-  telefono: 'Solo números, entre 7 y 10 dígitos.',
+  telefono: 'Número ecuatoriano de 10 dígitos (ej: 0991234567).',
   mensaje: 'El mensaje debe tener entre 10 y 400 caracteres.',
 };
 
